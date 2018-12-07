@@ -1,16 +1,16 @@
 import random
 
-y = int(input("Anzahl der Zahlen: "))
+y = int(input("Amount of Numbers: "))
 x = random.randint(1, y)
 
-z = int(input("Rate: "))
+z = int(input("Guess: "))
 
 while (z != x):
-  z = int(input("Rate: "))
+  z = int(input("Guess: "))
   if (z > x):
-    print("Zahl zu groß!")
+    print("Number is too big!")
   elif (z < x):
-    print("Zahl ist zu klein!")
+    print("Number is too small!")
     
-print("Super du hast es geschafft!")
+print("Well done, you guessed the number")
 input()
